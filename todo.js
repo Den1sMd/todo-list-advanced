@@ -6,4 +6,7 @@ console.log(input, button, ul)
 
 button.addEventListener("click", ()=>{
     console.log(input.value);
+    const newLi = document.createElement("li")
+    newLi.innerText = input.value
+    ul.appendChild(newLi)
 })
